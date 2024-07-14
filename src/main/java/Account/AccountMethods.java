@@ -42,7 +42,7 @@ public class AccountMethods {
             if (spaceControl && digitControl && specialCharCnt && upperCaseControl && lowerCaseControl) {
                 break;
             } else
-                System.out.println("Please enter a valid passport.");
+                System.out.println("Please enter a valid password.");
 
         }
         String name;
@@ -127,6 +127,7 @@ public class AccountMethods {
                 System.out.println("Please enter your birth date in DD.MM.YYYY format");
                 continue;
             }
+            System.out.println("Account has been successfully created");
             break;
         }
 

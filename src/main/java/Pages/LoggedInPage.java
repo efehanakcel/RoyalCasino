@@ -3,6 +3,8 @@ package Pages;
 import Account.Account;
 import DepositMethods.BankTransfer;
 import DepositMethods.Paypal;
+import Account.UserInformation;
+import Account.PasswordUpdate;
 
 import java.util.Scanner;
 
@@ -25,23 +27,32 @@ public class LoggedInPage{
             switch (choice){
                 case 1:
                     Deposit.deposit(loggedInAccount);
+                    break;
                 case 2:
-
+                    Withdraw.withdraw(loggedInAccount);
+                    break;
                 case 3:
-
+                    CasinoGames.getGames(loggedInAccount);
                 case 4:
 
                 case 5:
-
+                    UserInformation.getInfo(loggedInAccount);
                 case 6:
-
+                    PasswordUpdate.update(loggedInAccount);
 
 
 
                 default:
             }
 
+            System.out.println("Would you like to continue the process ? \n" +
+                    "Enter 1 to continue, 2 for Main Page ");
+            int devamMi = scanner.nextInt();
+            if (devamMi == 1){
+                continue;
+            }
 
+            break;
 
 
         }while (true);
