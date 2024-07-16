@@ -60,6 +60,7 @@ public class ImmersiveRoulette{
             System.out.println("Press 10 to bet on Dozen (1-12");
             System.out.println("Press 11 to bet on Dozen (13-24");
             System.out.println("Press 12 to bet on Dozen (25-36");
+            System.out.println("Press 13 to Play");
             int betType = scanner.nextInt();
 
             int result = generateRandomNumber();
@@ -239,6 +240,12 @@ public class ImmersiveRoulette{
                             }
                         }
                         if (isContinue()) {
+                            continue;
+                        }
+                        break;
+                    case 13 :
+                        if(betHash.isEmpty()){
+                            System.out.println("Please enter your bet first");
                             continue;
                         }
                         break;
