@@ -12,7 +12,7 @@ public class Account {
     private String email;
     private String identityNumber;
     private String birthDate;
-    private int balance;
+    private double balance;
 
     public String getUsername() {
         return username;
@@ -46,7 +46,7 @@ public class Account {
         return birthDate;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -82,7 +82,7 @@ public class Account {
         this.birthDate = birthDate;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

@@ -31,8 +31,8 @@ public class CryptoCurrency {
 
     public static void deposit(Account loggedInAccount) {
         Scanner scanner = new Scanner(System.in);
-        int dolLar = 34;
-        int euro = 37;
+        double dolLar = 34;
+        double euro = 37;
         generateRandomString();
         do {
 
@@ -46,7 +46,7 @@ public class CryptoCurrency {
             int select = scanner.nextInt();
 
             System.out.println("Please enter the amount you would like to transfer");
-            int amount = scanner.nextInt();
+            double amount = scanner.nextInt();
 
 
             for (String w : cryptoWalletList) {

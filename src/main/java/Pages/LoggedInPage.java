@@ -33,6 +33,7 @@ public class LoggedInPage{
                     break;
                 case 3:
                     CasinoGames.getGames(loggedInAccount);
+                    break;
                 case 4:
 
                 case 5:
