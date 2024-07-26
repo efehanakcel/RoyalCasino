@@ -22,9 +22,11 @@ public class CasinoGames {
                   ImmersiveRoulette.play(loggedInAccount);
                   break;
                 case 2:
-                    LightningRoulette.play();
+                    LightningRoulette.play(loggedInAccount);
+                    break;
                 case 3:
                     DoubleBallRoulette.play();
+                    break;
                 default:
                     System.out.println("Please enter a valid number");
 
